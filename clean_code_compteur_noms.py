@@ -25,7 +25,7 @@ def compter_noms_plus_de_x_lettres(list_prenoms:list[str], seuil:int=7) -> int:
 class TestNamesMethod(unittest.TestCase):
      def test_names(self):
         prenoms = ["Guillaume", "Gilles", "Juliette", "Antoine", "François", "Cassandre"]
-        plus_long_que_seuil = compter_noms_plus_de_x_lettres(prenoms=prenoms)
+        plus_long_que_seuil = compter_noms_plus_de_x_lettres(list_prenoms=prenoms)
         self.assertEqual(plus_long_que_seuil, 4)
 
 if __name__ == '__main__':
